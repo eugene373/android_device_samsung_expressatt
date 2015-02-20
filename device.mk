@@ -74,6 +74,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/expressatt/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     device/samsung/expressatt/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    device/samsung/expressatt/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/samsung/expressatt/twrp.fstab:root/etc/twrp.fstab
+
 PRODUCT_PACKAGES += \
     WCNSS_cfg.dat \
     WCNSS_qcom_cfg.ini \

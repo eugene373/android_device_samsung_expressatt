@@ -76,3 +76,23 @@ WIFI_DRIVER_FW_PATH_AP      := "ap"
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/expressatt
+
+# TWRP
+DEVICE_RESOLUTION := 480x800
+RECOVERY_SDCARD_ON_DATA := true
+
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/samsung/expressatt/mr_init_devices.c
+MR_RD_ADDR := 0x82500000
+MR_DPI := hdpi
+MR_DPI_MUL := 0.6
+MR_DPI_FONT := 135
+MR_FSTAB := device/samsung/expressatt/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_INFOS := device/samsung/expressatt/mrom_infos
+MIRI_W := 54
+
+#KEXEC_HB_PAGE_ADDR := 0x88C00000
+
+PRODUCT_COPY_FILES += device/samsung/expressatt/twrp.fstab:recovery/root/etc/twrp.fstab
