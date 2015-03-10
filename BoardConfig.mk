@@ -88,3 +88,7 @@ WIFI_DRIVER_FW_PATH_AP      := "ap"
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/expressatt
+
+# TWRP
+DEVICE_RESOLUTION := 480x800
+RECOVERY_SDCARD_ON_DATA := true

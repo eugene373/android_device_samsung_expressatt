@@ -82,5 +82,10 @@ PRODUCT_PACKAGES += \
     WCNSS_qcom_cfg.ini \
     WCNSS_qcom_wlan_nv.bin_
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    device/samsung/expressatt/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/samsung/expressatt/twrp.fstab:root/etc/twrp.fstab
+
 # common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
