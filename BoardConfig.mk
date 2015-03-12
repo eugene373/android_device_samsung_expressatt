@@ -86,5 +86,10 @@ WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/prima_wlan/parameters/fwpath"
 WIFI_DRIVER_FW_PATH_STA     := "sta"
 WIFI_DRIVER_FW_PATH_AP      := "ap"
 
+# TWRP
+DEVICE_RESOLUTION := 480x800
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_INITRC := device/samsung/expressatt/init.recovery.qcom.rc
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/expressatt
