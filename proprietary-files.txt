@@ -13,6 +13,7 @@ bin/btnvtool
 bin/hci_qcomm_init
 
 # Camera
+bin/mm-qcamera-daemon
 lib/hw/camera.msm8960.so:lib/hw/camera.vendor.msm8960.so
 lib/libmmcamera_frameproc.so
 lib/libmmcamera_statsproc30.so
